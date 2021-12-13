@@ -79,6 +79,25 @@
 <wire x1="100" y1="0" x2="100" y2="100" width="0" layer="20"/>
 <wire x1="100" y1="100" x2="0" y2="100" width="0" layer="20"/>
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<text x="61.5" y="10" size="1.778" layer="51">+</text>
+<text x="56.5" y="10" size="1.778" layer="51">-</text>
+<text x="55.5" y="12" size="1.778" layer="51">48VDC</text>
+<text x="88.5" y="39.5" size="1.778" layer="51" rot="R90">Thermo</text>
+<text x="100" y="45.5" size="1.778" layer="51" rot="R180">1</text>
+<text x="90" y="45.5" size="1.778" layer="51" rot="R180">2</text>
+<text x="58.5" y="48" size="1.778" layer="51">Start Test</text>
+<text x="52.5" y="31" size="1.778" layer="51" rot="R90">Settings</text>
+<text x="41.5" y="23.5" size="1.778" layer="51">1</text>
+<text x="44.5" y="23.5" size="1.778" layer="51">2</text>
+<text x="47.5" y="23.5" size="1.778" layer="51">3</text>
+<text x="40" y="36.5" size="1.778" layer="51" rot="R90">on</text>
+<text x="40" y="32" size="1.778" layer="51" rot="R90">off</text>
+<text x="43" y="53" size="1.778" layer="51" rot="R90">failed</text>
+<text x="49" y="53.5" size="1.778" layer="51" rot="R90">passed</text>
+<text x="5.5" y="84.5" size="1.778" layer="51">EasyBMS Tester</text>
+<text x="5.5" y="77" size="1.778" layer="51">13.12.2021
+v1.0</text>
+<text x="5.5" y="72" size="1.778" layer="51">8s AND 12s</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -3091,6 +3110,10 @@ metal electrode face (MELF)</description>
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
