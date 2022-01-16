@@ -8158,7 +8158,6 @@ filled</description>
 <part name="X1" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U$1" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596HVS" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U$2" library="diy-modules" deviceset="WEMOS-D1-MINI" device=""/>
@@ -8278,11 +8277,8 @@ filled</description>
 <instance part="GND1" gate="1" x="116.84" y="185.42" smashed="yes">
 <attribute name="VALUE" x="114.3" y="182.88" size="1.778" layer="96"/>
 </instance>
-<instance part="P+1" gate="VCC" x="81.28" y="195.58" smashed="yes">
-<attribute name="VALUE" x="78.74" y="193.04" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+2" gate="VCC" x="50.8" y="185.42" smashed="yes">
-<attribute name="VALUE" x="48.26" y="182.88" size="1.778" layer="96" rot="R90"/>
+<instance part="P+1" gate="VCC" x="91.44" y="200.66" smashed="yes">
+<attribute name="VALUE" x="88.9" y="198.12" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$1" gate="G$1" x="190.5" y="195.58" smashed="yes">
 <attribute name="NAME" x="177.8" y="210.82" size="1.778" layer="95"/>
@@ -8374,13 +8370,13 @@ filled</description>
 <attribute name="NAME" x="87.63" y="56.9214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="87.63" y="61.722" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="T1" gate="A" x="50.8" y="167.64" smashed="yes">
-<attribute name="VALUE" x="53.34" y="167.64" size="1.778" layer="96"/>
-<attribute name="NAME" x="53.34" y="170.18" size="1.778" layer="95"/>
+<instance part="T1" gate="A" x="50.8" y="162.56" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="53.34" y="162.56" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="53.34" y="160.02" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="T2" gate="A" x="91.44" y="167.64" smashed="yes">
-<attribute name="VALUE" x="93.98" y="167.64" size="1.778" layer="96"/>
-<attribute name="NAME" x="93.98" y="170.18" size="1.778" layer="95"/>
+<instance part="T2" gate="A" x="91.44" y="162.56" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="93.98" y="162.56" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="93.98" y="160.02" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="T3" gate="A" x="-43.18" y="93.98" smashed="yes">
 <attribute name="VALUE" x="-40.64" y="93.98" size="1.778" layer="96"/>
@@ -8726,22 +8722,18 @@ filled</description>
 <wire x1="104.14" y1="190.5" x2="91.44" y2="190.5" width="0.1524" layer="91"/>
 <label x="91.44" y="193.04" size="1.778" layer="95"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="91.44" y1="190.5" x2="81.28" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="190.5" x2="81.28" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="T2" gate="A" pin="D"/>
-<wire x1="91.44" y1="172.72" x2="91.44" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="190.5" x2="91.44" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="T2" gate="A" pin="S"/>
+<wire x1="91.44" y1="167.64" x2="91.44" y2="190.5" width="0.1524" layer="91"/>
 <junction x="91.44" y="190.5"/>
+<pinref part="T1" gate="A" pin="S"/>
+<wire x1="50.8" y1="167.64" x2="50.8" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="190.5" x2="50.8" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="IN+"/>
 <wire x1="172.72" y1="200.66" x2="157.48" y2="200.66" width="0.1524" layer="91"/>
 <label x="157.48" y="200.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="T1" gate="A" pin="D"/>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="50.8" y1="172.72" x2="50.8" y2="182.88" width="0.1524" layer="91"/>
-<label x="53.34" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
@@ -8962,8 +8954,8 @@ filled</description>
 <segment>
 <pinref part="JP1" gate="G$1" pin="TOTAL+SUPPLY"/>
 <wire x1="96.52" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="T2" gate="A" pin="S"/>
-<wire x1="91.44" y1="111.76" x2="91.44" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="T2" gate="A" pin="D"/>
+<wire x1="91.44" y1="111.76" x2="91.44" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GATET1" class="0">
@@ -9026,10 +9018,10 @@ filled</description>
 <wire x1="96.52" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="101.6" x2="76.2" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="149.86" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="T1" gate="A" pin="S"/>
-<wire x1="50.8" y1="162.56" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
-<junction x="50.8" y="149.86"/>
 <label x="38.1" y="154.94" size="1.778" layer="95"/>
+<pinref part="T1" gate="A" pin="D"/>
+<wire x1="50.8" y1="149.86" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
+<junction x="50.8" y="149.86"/>
 </segment>
 </net>
 <net name="A0" class="0">
