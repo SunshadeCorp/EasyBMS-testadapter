@@ -7203,8 +7203,63 @@ Source: www.kingbright.com</description>
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
+<package name="2X11_MEB12S_MODULSEITE_SMD">
+<description>&lt;b&gt;VW BMS connector footprint&lt;/b&gt;
+&lt;p&gt; SMD version of VW MEB BMS connector&lt;/p&gt;</description>
+<smd name="11" x="0" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="12" x="0" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="9" x="-3" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="3" x="-12" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="4" x="-12" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="5" x="-9" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="1" x="-15" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="7" x="-6" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="8" x="-6" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="15" x="6" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="10" x="-3" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="17" x="9" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="13" x="3" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="14" x="3" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="6" x="-9" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="16" x="6" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="2" x="-15" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="18" x="9" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="19" x="12" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="20" x="12" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="21" x="15" y="0" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="22" x="15" y="-5" dx="3" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$1" x="-19" y="8" dx="6" dy="4" layer="1" rot="R90"/>
+<smd name="P$2" x="19" y="8" dx="6" dy="4" layer="1" rot="R90"/>
+<hole x="-13.5" y="8" drill="2.3"/>
+<hole x="7.5" y="8" drill="2.3"/>
+<hole x="11.5" y="8" drill="2.3"/>
+<wire x1="-19" y1="17" x2="-6" y2="17" width="0.127" layer="21"/>
+<wire x1="-6" y1="17" x2="6" y2="17" width="0.127" layer="21"/>
+<wire x1="6" y1="17" x2="19" y2="17" width="0.127" layer="21"/>
+<wire x1="19" y1="17" x2="19" y2="6" width="0.127" layer="21"/>
+<wire x1="19" y1="6" x2="19" y2="-7" width="0.127" layer="21"/>
+<wire x1="19" y1="-7" x2="18" y2="-7" width="0.127" layer="21"/>
+<wire x1="18" y1="-7" x2="18" y2="4" width="0.127" layer="21"/>
+<wire x1="18" y1="4" x2="-18" y2="4" width="0.127" layer="21"/>
+<wire x1="-18" y1="4" x2="-18" y2="-7" width="0.127" layer="21"/>
+<wire x1="-18" y1="-7" x2="-19" y2="-7" width="0.127" layer="21"/>
+<wire x1="-19" y1="-7" x2="-19" y2="6" width="0.127" layer="21"/>
+<wire x1="-19" y1="6" x2="-19" y2="17" width="0.127" layer="21"/>
+<wire x1="6" y1="17" x2="6" y2="6" width="0.127" layer="21"/>
+<wire x1="6" y1="6" x2="-6" y2="6" width="0.127" layer="21"/>
+<wire x1="-6" y1="6" x2="-6" y2="17" width="0.127" layer="21"/>
+<wire x1="-6" y1="6" x2="-19" y2="6" width="0.127" layer="21"/>
+<wire x1="6" y1="6" x2="19" y2="6" width="0.127" layer="21"/>
+<wire x1="3" y1="15.5" x2="3" y2="14.5" width="0.127" layer="21"/>
+<wire x1="3" y1="14.5" x2="-3" y2="14.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="14.5" x2="-3" y2="15.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="15.5" x2="3" y2="15.5" width="0.127" layer="21"/>
+<text x="-20" y="-5.5" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<text x="21" y="-5.5" size="1.27" layer="21" rot="R90">&gt;VALUE</text>
+</package>
 <package name="2X11_MEB12S_MODULSEITE">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<description>&lt;b&gt;VW BMS connector footprint&lt;/b&gt;
+&lt;p&gt;THT version of VW MEB BMS connector &lt;/p&gt;</description>
 <pad name="1" x="15" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="2" x="15" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="3" x="12" y="-1.27" drill="1.016" shape="octagon"/>
@@ -7274,7 +7329,36 @@ Source: www.kingbright.com</description>
 <gate name="G$1" symbol="PINH2X11_MEB12S_MODULSEITE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="2X11_MEB12S_MODULSEITE">
+<device name="_THT" package="2X11_MEB12S_MODULSEITE">
+<connects>
+<connect gate="G$1" pin="12" pad="6"/>
+<connect gate="G$1" pin="18" pad="8"/>
+<connect gate="G$1" pin="9" pad="5"/>
+<connect gate="G$1" pin="C1+" pad="10"/>
+<connect gate="G$1" pin="C10+" pad="19"/>
+<connect gate="G$1" pin="C11+" pad="20"/>
+<connect gate="G$1" pin="C2+" pad="11"/>
+<connect gate="G$1" pin="C3+" pad="12"/>
+<connect gate="G$1" pin="C4+" pad="13"/>
+<connect gate="G$1" pin="C5+" pad="14"/>
+<connect gate="G$1" pin="C6+" pad="15"/>
+<connect gate="G$1" pin="C7+" pad="16"/>
+<connect gate="G$1" pin="C8+" pad="17"/>
+<connect gate="G$1" pin="C9+" pad="18"/>
+<connect gate="G$1" pin="CTOTAL+" pad="21"/>
+<connect gate="G$1" pin="THERMO1_IN" pad="1"/>
+<connect gate="G$1" pin="THERMO1_OUT" pad="3"/>
+<connect gate="G$1" pin="THERMO2_IN" pad="2"/>
+<connect gate="G$1" pin="THERMO2_OUT" pad="4"/>
+<connect gate="G$1" pin="TOTAL+SUPPLY" pad="22"/>
+<connect gate="G$1" pin="TOTAL-C" pad="9"/>
+<connect gate="G$1" pin="TOTAL-SUPPLY" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SMD" package="2X11_MEB12S_MODULSEITE_SMD">
 <connects>
 <connect gate="G$1" pin="12" pad="6"/>
 <connect gate="G$1" pin="18" pad="8"/>
@@ -8178,7 +8262,7 @@ filled</description>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="680R"/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="680R"/>
-<part name="JP1" library="pinhead_own" deviceset="PINHD-2X11_MEB12S_MODULSEITE" device=""/>
+<part name="JP1" library="pinhead_own" deviceset="PINHD-2X11_MEB12S_MODULSEITE" device="_SMD"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
